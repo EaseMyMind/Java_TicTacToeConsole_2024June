@@ -44,4 +44,15 @@ public class Board {
             return false;
         }
     }
+    public boolean isTie(int[] board){
+        int summ = 0;
+        for(int i = 0; i < board.length; i++){
+            summ = summ + board[i];
+        }
+        if(summ <= 5){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

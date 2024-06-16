@@ -40,6 +40,9 @@ public class Runner {
                 continue;
             }
             turnCount = turnCount + 1;
+            if(board.isTie(board.getBoard())){
+                break;
+            }
             if(board.checkWin(board.getBoard())){
              hasWon = true;
             }
